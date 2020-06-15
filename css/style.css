@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fundo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+}
+
+@media (min-width: 720px) {
+    body {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1000px ) {
+    body {
+        font-size: 30px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background: #00000040;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.menu a {
+    color: blanchedalmond;
+    display: block;
+    padding: 7px 15px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.home {
+    text-align: center;
+}
+
+.home a {
+    color: black;
+    font-size: 2.25em;
+}
+
+.home a:active,
+.home a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 7px black;
+}
+
+.site-title,
+.site-subtitle {
+    color: black;
+    text-align: center;
+}
+
+.site-title {
+    font-family: 'Cutive Mono', monospace;
+}
+
+.site-subtitle {
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 8px;
+}
+
+.seta  {
+    bottom: 0.1em;
+    font-size: 3em;
+    position: absolute;
+    text-decoration: none;
+}
+
+.seta a {
+    color: black;
+}
+
+.sobre, .projetos {
+    padding: 1.5em;
+    min-height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #00000040;
+}
+
+.sobre p {
+    color: blanchedalmond;
+    line-height: 1.5em;
+    margin-bottom: 1.4em;
+    text-indent: 1.4em;
+    text-align: justify;
+  }
+
+.site-title2 {
+    font-family: 'Cutive Mono', monospace;
+    margin-bottom: 0.5em;
+}
+
+.site-title3 {
+    font-family: 'Cutive Mono', monospace;
+    margin-bottom: 2em;
+}
+
+
+.projetos .grid {
+    display: grid;
+    gap: 1em;
+}
+
+.projetos figcaption {
+    color: blanchedalmond;
+}
+
+.projetos figure {
+    text-align: center;
+}
+
+.img-projetos {
+    height: 170px;
+    width: 240px;
+}
+
+@media (min-width: 900px) {
+    .projetos .grid {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 360px 360px;
+        justify-content: center;
+    }
+
+    .img-projetos {
+            height: 220px;
+            width: 360px;
+    }
+}
+
+@media (min-width:1100px) {
+    .projetos .grid {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: 480px 480px;
+        justify-content: center;
+    }
+
+    .img-projetos {
+        height: 340px;
+        width: 480px;
+    }
+}
